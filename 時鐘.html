@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <title>Clock</title>
+  <style>
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      background-image: url("./pic1.jpg");
+      font-family: "Orbitron";
+    }
+
+    .nums {
+      position: absolute;
+      color: white;
+      font-size: 70px;
+      text-shadow: 0 0 5px rgb(25, 255, 83), 0 0 10px rgb(25, 255, 83), 0 0 15px rgb(25, 255, 83);
+    }
+
+    .num1 {
+      left: 500px;
+      top: 100px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num2 {
+      left: 600px;
+      top: 200px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num3 {
+      left: 650px;
+      top: 350px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num4 {
+      left: 600px;
+      top: 500px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num5 {
+      left: 500px;
+      top: 600px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num6 {
+      left: 350px;
+      top: 650px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num7 {
+      left: 200px;
+      top: 600px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num8 {
+      left: 100px;
+      top: 500px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num9 {
+      left: 50px;
+      top: 350px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num10 {
+      left: 100px;
+      top: 200px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num11 {
+      left: 200px;
+      top: 100px;
+      transform: translate(-50%, -50%);
+    }
+
+    .num12 {
+      left: 350px;
+      top: 50px;
+      transform: translate(-50%, -50%);
+    }
+
+    #clock {
+      border: 3px solid white;
+      box-shadow: 0 0 5px rgb(186, 15, 248), 0 0 15px rgb(186, 15, 248), 0 0 25px rgb(186, 15, 248);
+      width: 700px;
+      height: 700px;
+      background-image: url("./pic5.jpg");
+      position: relative;
+      border-radius: 50%;
+      top: 120px;
+      left:250px;
+      animation: a1 5s infinite linear alternate;
+    }
+
+    #point {
+      width: 100px;
+      height: 100px;
+      background-image: url("./pic1.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    #hour {
+      width: 100px;
+      height: 100px;
+      background-image: url("./pic2.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: calc(50% - 50px);
+      left: calc(50% - 50px);
+      margin-left: 150px;
+      transform-origin: -100px 50px;
+    }
+
+    #minute {
+      width: 100px;
+      height: 100px;
+      background-image: url("./pic3.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: calc(50% - 50px);
+      left: calc(50% - 50px);
+      margin-left: 250px;
+      transform-origin: -200px 50px;
+    }
+
+    #second {
+      width: 100px;
+      height: 100px;
+      background-image: url("./pic4.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: calc(50% - 50px);
+      left: calc(50% - 50px);
+      margin-left: 350px;
+      transform-origin: -300px 50px;
+    }
+
+    #clock2 {
+      width: 400px;
+      height: 400px;
+      border: 3px solid rgb(255, 255, 255);
+      border-radius: 400px;
+      background: rgb(0, 0, 0);
+      position: absolute;
+      top: 400px;
+      left: 1200px;
+      text-align: center;
+      line-height: 400px;
+      text-shadow: 0 0 5px rgb(186, 15, 248), 0 0 10px rgb(186, 15, 248), 0 0 15px rgb(186, 15, 248);
+      animation: a1 5s infinite linear alternate;
+    }
+
+    #hour2,
+    #minute2,
+    #second2 {
+      display: inline-block;
+      font-size: 50px;
+      color: white;
+    }
+
+    @keyframes a1 {
+      0% {
+        text-shadow: 0 0 5px rgb(186, 15, 248), 0 0 15px rgb(186, 15, 248), 0 0 25px rgb(186, 15, 248);
+        box-shadow: 0 0 5px rgb(186, 15, 248), 0 0 15px rgb(186, 15, 248), 0 0 25px rgb(186, 15, 248);
+      }
+
+      20% {
+        text-shadow: 0 0 5px rgb(248, 15, 42), 0 0 15px rgb(248, 15, 42), 0 0 25px rgb(248, 15, 42);
+        box-shadow: 0 0 5px rgb(248, 15, 42), 0 0 15px rgb(248, 15, 42), 0 0 25px rgb(248, 15, 42);
+      }
+
+      60% {
+        text-shadow: 0 0 5px rgb(238, 255, 0), 0 0 15px rgb(238, 255, 0), 0 0 25px rgb(238, 255, 0);
+        box-shadow: 0 0 5px rgb(238, 255, 0), 0 0 15px rgb(238, 255, 0), 0 0 25px rgb(238, 255, 0);
+      }
+
+      80% {
+        text-shadow: 0 0 5px rgb(27, 82, 248), 0 0 15px rgb(27, 82, 248), 0 0 25px rgb(27, 82, 248);
+        box-shadow: 0 0 5px rgb(27, 82, 248), 0 0 15px rgb(27, 82, 248), 0 0 25px rgb(27, 82, 248);
+      }
+
+      100% {
+        text-shadow: 0 0 5px rgb(25, 255, 83), 0 0 15px rgb(25, 255, 83), 0 0 25px rgb(25, 255, 83);
+        box-shadow: 0 0 5px rgb(25, 255, 83), 0 0 15px rgb(25, 255, 83), 0 0 25px rgb(25, 255, 83);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="clock">
+    <div class="num1 nums">1</div>
+    <div class="num2 nums">2</div>
+    <div class="num3 nums">3</div>
+    <div class="num4 nums">4</div>
+    <div class="num5 nums">5</div>
+    <div class="num6 nums">6</div>
+    <div class="num7 nums">7</div>
+    <div class="num8 nums">8</div>
+    <div class="num9 nums">9</div>
+    <div class="num10 nums">10</div>
+    <div class="num11 nums">11</div>
+    <div class="num12 nums">12</div>
+    <div id="point"></div>
+    <div id="hour"></div>
+    <div id="minute"></div>
+    <div id="second"></div>
+  </div>
+  <div id="clock2">
+    <div id="hour2"></div>
+    <div id="minute2"></div>
+    <div id="second2"></div>
+  </div>
+  <script>
+    const point = document.getElementById('point')
+    const hour = document.getElementById('hour')
+    const minute = document.getElementById('minute')
+    const second = document.getElementById('second')
+
+    setInterval(() => {
+      const date = new Date()
+      hour.style.transform = `rotate(${date.getHours() * 30 - 90}deg)`
+      minute.style.transform = `rotate(${date.getMinutes() * 6 - 90}deg)`
+      second.style.transform = `rotate(${date.getSeconds() * 6 - 90}deg)`
+    }, 1000);
+
+    setInterval(() => {
+      const date = new Date()
+      const hour = date.getHours()
+      const min = date.getMinutes()
+      const sec = date.getSeconds()
+
+      hour2.innerText = `${String(hour).padStart(2, 0)}:`
+      minute2.innerText = `${String(min).padStart(2, 0)}:`
+      second2.innerText = `${String(sec).padStart(2, 0)}`
+      hour2.style.fontFamily = 'Orbitron'
+      minute2.style.fontFamily = 'Orbitron'
+      second2.style.fontFamily = 'Orbitron'
+    }, 1000);
+
+
+  </script>
+</body>
+
+</html>
